@@ -44,7 +44,7 @@ function SignUp() {
         <br />
         <button type="submit">Submit</button>
         <p>
-        Already have an account? <a href="/SignIn">Sign In</a>
+        Already have an account? <span onClick={() => navigate('/SignIn')}>Sign In</span>
       </p>
         <button type="reset">Reset</button>
       </form>
