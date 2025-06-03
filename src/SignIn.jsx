@@ -27,7 +27,7 @@ function SignIn() {
         <button type='submit'>Submit</button>
     </form>
     <p>
-        New user ?<a href='/SignUp'>SignUp</a>
+        New user ?<span onClick={() => navigate('/SignUp')}>Sign Up</span>
     </p>
     </>
   )
