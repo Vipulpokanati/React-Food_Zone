@@ -131,13 +131,13 @@ color:  rgb(84, 78, 83);
 }
 
 @media (max-width: 480px) {
-.product-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* ❌ Remove the comma */
-    gap: 1rem; /* Optional: space between items */
+  .product-grid {
+    justify-content: center;
+    gap: 1rem;
   }
 
   .product-card {
+    flex: 1 1 100%;
     max-width: 100%;
     margin: auto;
   }
@@ -150,7 +150,6 @@ color:  rgb(84, 78, 83);
     font-size: 0.9rem;
   }
 
-
   .pagination {
     display: flex;
     flex-wrap: wrap;
@@ -161,6 +160,7 @@ color:  rgb(84, 78, 83);
     font-size: 0.85rem;
   }
 }
+
 .no-products {
   display: flex;
   justify-content: center;

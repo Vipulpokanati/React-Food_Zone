@@ -22,7 +22,7 @@ const productSlice = createSlice({
               { id: 14, name: 'Tandoori Roti', price: 20, image: './images/tandooriRoti.jpg' },
               { id: 15, name: 'Stuffed Paratha', price: 40, image: './images/stuffedParatha.jpg' },
               { id: 16, name: 'Malai Kofta', price: 155, image: './images/malaiKofta.jpg' },
-              { id: 17, name: 'Vegetable Hakka Noodles', price: 130, image: './images/vegetablehakkaNoodles.jpg' },
+              { id: 17, name: 'Vegetable Hakka Noodles', price: 130, image: './images/vegetableHakkaNoodles.jpg' },
               { id: 18, name: 'Veg Manchurian', price: 140, image: './images/vegManchurian.jpg' },
               { id: 19, name: 'Corn Capsicum Masala', price: 135, image: './images/cornCapsicumMasala.jpg' },
               { id: 20, name: 'Baingan Bharta', price: 105, image: './images/bainganBharta.jpg' }
