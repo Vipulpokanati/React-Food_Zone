@@ -1,0 +1,41 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: static;
+  bottom: 0;
+
+  display: flex;
+  width: 100%;
+  background-color: #222;
+  z-index: 1;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.footer-link {
+  cursor: pointer;
+  color: #eeeeef;
+  font-weight: 500;
+
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

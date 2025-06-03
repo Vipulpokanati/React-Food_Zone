@@ -1,0 +1,245 @@
+/* Product Grid Styles */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 2rem; /* Improved readability */
+  font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color:  rgb(84, 78, 83);
+  /* Optional enhancements */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0px;
+}
+.name h2{
+  margin: 0%;
+}
+
+/* Product Card Styles */
+.product-card {
+  background-color: #fff;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin: 8px 0;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #27ae60;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.product-card button {
+  padding: 10px 18px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #219150;
+}
+
+
+/* Pagination Styles */
+.pagination {
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: #282a2b;
+  color: white;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ✅ Responsive Layout */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    padding: 12px;
+  }
+
+  .product-card {
+    padding: 12px;
+  }
+
+  .product-card img {
+    height: 130px;
+  }
+
+  .pagination button {
+    padding: 6px 10px;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ❌ Remove the comma */
+    gap: 1rem; /* Optional: space between items */
+  }
+
+  .product-card {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .product-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pagination button {
+    font-size: 0.85rem;
+  }
+}
+.no-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #d32f2f;
+  background-color: #fff0f0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+
+  grid-column: 1 / -1;
+}
+/* Hamburger Menu */
+.hamburger-menu {
+  position: relative;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.hamburger-menu button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  height: 45px;
+}
+
+/* Hamburger Content */
+.menu-content {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  width: 200px;
+  border-radius: 6px;
+}
+
+.menu-content div {
+  margin-bottom: 1rem;
+}
+
+.menu-content label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.menu-content select {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Clear Filters Button */
+.clear-filters button {
+  margin-top: 10px;
+  padding: 6px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.clear-filters button:hover {
+  background-color: #d32f2f;
+}

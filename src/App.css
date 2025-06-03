@@ -1,0 +1,34 @@
+/* Reset and full viewport setup */
+ body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  
+}
+
+/* Make body use full height and stack children vertically */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+
+.header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.footer {
+  margin-top: auto;
+}
+/* App.css or global styles */
+.Toastify__toast-container {
+  top: 150px !important;
+
+  left: auto !important;
+  right: 50px !important;    /* move 50px from right */
+}

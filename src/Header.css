@@ -1,0 +1,297 @@
+/* Ensure body and root take full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+/* Header.css */
+
+.header-container {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-family: Arial, sans-serif;
+}
+
+/* Top bar styling */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #080808;
+  color: #fff;
+
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.site-name {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Clean and modern font */
+  color: #7e97b0; /* Deep slate blue-gray */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.site-name:hover {
+  color: #3498db; /* Bright blue on hover for interactivity */
+}
+
+/* Search bar */
+.search-bar {
+  padding: 10px 16px;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  width: 150px;
+  max-width: 100%;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.4s ease;
+  background: #f5f5f5;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* On hover */
+.search-bar:hover {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* On focus */
+.search-bar:focus {
+  width: 220px;
+  background: #fff;
+  border-color: #23cbda;
+  box-shadow: 0 0 0 3px rgba(35, 203, 218, 0.3);
+  color: #000;
+}
+
+.search-bar:focus-within{
+    outline:none;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: red;
+}
+/* Hamburger menu */
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #333;
+  padding: 0.75rem 1rem;
+  border: none;
+}
+
+.navbar a {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+}
+
+
+.navbar a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cart-badge {
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/* Auth buttons */
+.navbar div span {
+  margin-left: 20px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: rgb(37, 143, 185);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar div button {
+  padding: 5px 10px;
+   background-color: inherit;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar div button:hover {
+  background-color: #555;
+   color: #fff;
+   font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  .search-bar {
+    width: 100px;
+  }
+}
+
+/* Content wrapper for main area and footer */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer styles */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+/* 📱 Mobile layout */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-left,
+  .top-right {
+    width: 100%;
+    
+  }
+
+  .top-left {
+    margin-bottom: 0.5rem;
+  }
+
+  .top-right {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .search-bar {
+    flex: 1;
+  }
+  .food-quote,
+  .quote-bar {
+    display: none;
+  }
+}
+.quote-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 0 16px;
+  min-height: 56px;
+  overflow: hidden;
+  position: relative;
+  height: 60px; /* ensure fixed height */
+}
+
+.food-quote {
+  display: inline-block;
+  white-space: normal;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #61e5ff;
+  position: absolute;
+  animation: scrollQuoteVertical 5s linear infinite;
+}
+
+.quote-bar:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Animations */
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Vertical scroll animation */
+@keyframes scrollQuoteVertical {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}

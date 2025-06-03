@@ -1,0 +1,91 @@
+/* General container */
+.home {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Hero section */
+.hero-section h1 {
+  font-size: 3rem;
+  color: #e63946;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+/* Image gallery */
+.image-gallery {
+  margin: 2rem 0;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery-row img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* About section */
+.about {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.about h2 {
+  color: #1d3557;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Call to action */
+.cta {
+  margin-top: 3rem;
+}
+
+.cta h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #2a9d8f;
+}
+
+.cta button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #d65a3f;
+}
+

@@ -1,0 +1,67 @@
+/* SignIn.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f3;
+  margin: 0;
+  padding: 0;
+}
+
+/* SignIn.css */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 40px;
+}
+
+form {
+  background-color: white;
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 30px 35px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 12px 0 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button[type='submit'] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 0;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
